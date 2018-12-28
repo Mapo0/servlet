@@ -6,12 +6,25 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class UserDTO {
-    public List<User> users(){
-        List<User> users = new ArrayList<User>();
-        users.add(new User("admin","admin"));
-        users.add(new User("admin1","admin1"));
-        users.add(new User("admin2","admin2"));
+    private List<User> userList = new ArrayList<>();
 
-        return users;
+    public UserDTO() {
+        userList.add(new User("admin","admin"));
+        userList.add(new User("admin1","admin1"));
+        userList.add(new User("admin2","admin2"));
     }
+
+    public UserDTO(List<User> userList) {
+        this.userList = userList;
+    }
+
+    public List<User> getUserList() {
+        return userList;
+    }
+
+    public void setUserList(List<User> userList) {
+        this.userList = userList;
+    }
+
+
 }
