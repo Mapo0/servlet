@@ -26,9 +26,9 @@
             <div><input id="passwordField" type="password" name="password"></div>
         </tr>
         <tr>
-            <div style="text-align: center"><a href="index.jsp">Войти</a></div>
-            <div style="text-align: center"><a href="">Регистрация</a></div>
-                <input type="submit">
+            <input type="submit" value="Войти">
+            <div style="text-align: center">Регистрация</a></div>
+
 
         </tr>
     </table>
