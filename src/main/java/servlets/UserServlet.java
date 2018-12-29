@@ -26,7 +26,7 @@ public class UserServlet extends HttpServlet {
         UserDTO userDTO = new UserDTO();
         for (User user : userDTO.getUserList()) {
             if (user.getLogin().equals(login)&& user.getPassword().equals(password)) {
-                req.getRequestDispatcher("/index.jsp").forward(req, resp);
+                resp.sendRedirect("/index");
                 return;
             }
             else{
